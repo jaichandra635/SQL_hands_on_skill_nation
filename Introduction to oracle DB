@@ -1,0 +1,34 @@
+Database is a structured collection of data that is organized, managed, and stored
+in a way that allows for efficient retrival, manipulation, and querying of information.
+it is designed to store and access data. 
+
+In simple terms it is used to store data in tables conisting of rows and columns.
+each row represents a specific record, while each column represents a characteristics
+of that record
+
+databases are used to store and organize a wide range of information, such as customer
+details, product inventory financial trancations, and more.
+
+DATABASE are now divided in three parts
+
+1. DB mode - total 3 types of mode 
+           - 1. Open (or) read/write mode - user can access the DB and can use it.
+             2. Mount mode - DBA can use DB for maintainance/upgradation/migration
+             3. Inactive mode - none can use the DB, where pre requisites are defined
+
+2. DB Logical View
+      so, DB Logical View is divided into 
+          
+        Database ---> TableSpaces ---> Segment ---> Blocks
+explanation:
+            A database server contains multiple databases inside,
+            A database consists of mutliple table spaces
+            A table space consists of multiple segments
+            A segment consists of multiple blocks
+            
+real life example:
+let us consider a construction company build a big company
+
+
+        
+        
