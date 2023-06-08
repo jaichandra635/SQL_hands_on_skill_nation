@@ -1,1 +1,37 @@
+--> USING CREATE STATEMENT
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> TYPE1
+
+create table all_test1( 
+    test_code varchar(20), 
+    test_type char(10) 
+);
+
+
+create table test_tbl1( 
+    test_id int, 
+    test_name varchar2(20), 
+    test_code varchar2(10), 
+    test_state char(2), 
+    test_subj_code char(4), 
+    test_subj_mark int
+);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> TYPE2
+
+create table all_test2 ( 
+    test_code varchar(10) primary key, 
+    test_domain varchar(20) not null, 
+    test_type char(10) not null);
+
+create table test_tbl2( 
+    test_id int primary key, 
+    test_name varchar(20) not null, 
+    test_code varchar(10) references all_test2(test_code), 
+    test_state char(2), 
+    test_subj_code char(4) unique, 
+    test_subj_mark int check(test_subj_mark < 100))
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
