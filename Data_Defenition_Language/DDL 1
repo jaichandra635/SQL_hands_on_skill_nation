@@ -1,0 +1,8 @@
+DDL: DATA DEFENITION LANGUAGE
+--> to define the database objects in a Database
+operations
+1. CREATE
+2. ALTER
+3. DROP
+4. TRUNCATE
+5. RENAME
